@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.main-container {
+  background-color: #eee;
+}
+
+.container {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #aaa;
+}
+
+
+
+
+/*
+Bootstrap 4 grid tiers and media query breakpoints
+xs = Extra small <576px. Max container width None (auto)
+sm = Small ≥576px. Max container width 540px.
+md = Medium ≥768px. Max container width 720px.
+lg = Large ≥992px. Max container width 960px.
+xl = Extra large ≥1200px. Max container width 1140px.
+*/
+/*
+Media Query Ranges (Responsive Breakpoints):
+576px for portrait phones.
+768px for tablets.
+992px for laptops.
+1200px for large devices.
+*/
+@media (min-width: 768px) {
+   .container{
+       width: 750px;
+   } 
+}
+
+@media (min-width: 992px) {
+    .container{
+        width:970px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
