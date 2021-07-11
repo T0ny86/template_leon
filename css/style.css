@@ -1,3 +1,8 @@
+:root{
+  --clr-menu: #26D381;
+  --clr-menu-hover:#cee9dc;
+  --clr-menu-bg:rgb(235, 238, 238);
+}
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -9,7 +14,7 @@ body {
 }
 
 .main-container {
-  background-color: #eee;
+  width: 100%;
 }
 
 .container {
@@ -18,11 +23,64 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: #aaa;
+  background-color: var(--clr-menu-bg);
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  width: 80px;
+}
+.logo img{
+    width: 100%;
+}
+nav{
+  position: relative;
+  cursor: pointer;
+}
 
-
+nav:hover ul{
+  display: block;
+}
+nav ul {
+  position: absolute;
+  list-style: none;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  background-color: var(--clr-menu-bg);
+  top: calc(100% + 10px);
+  width: 300px;
+  display: none;
+}
+nav ul::after{
+  content: "";
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 10px solid ;
+  border-color: transparent transparent var(--clr-menu-bg) transparent;
+  position: absolute;
+  top:-20px;
+  right:6px;
+  
+}
+nav li a{
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--clr-menu);
+  transition: .3s;
+}
+nav li a:hover{
+padding-left: 25px;
+background-color: var(--clr-menu-hover);
+}
 
 /*
 Bootstrap 4 grid tiers and media query breakpoints
