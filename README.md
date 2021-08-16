@@ -1,5 +1,5 @@
 # Template_Leon
-## Pure HTML - CSS - JavaScript 
+## Pure HTML - CSS 
 
 ### Leon - PSD Agency Template ; is a free PSD template made by Graphberry.
 click here to preview https://t0ny86.github.io/template_leon/ in githubpages .
